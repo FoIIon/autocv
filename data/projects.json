@@ -1,0 +1,107 @@
+[
+  {
+    "id": "nexus-orchestrator",
+    "title": "Nexus AI Orchestrator",
+    "subtitle": "Multi-agent AI platform at enterprise scale",
+    "description": "A production-grade multi-agent orchestration system that routes, schedules, and monitors AI workloads across hundreds of enterprise deployments. Features intelligent cost optimization, real-time observability, and a drag-and-drop agent builder.",
+    "longDescription": "Built from scratch to solve the coordination problem in enterprise AI deployments. The system handles agent spawning, context management, tool use authorization, and graceful failure recovery. It processes over 50 million tokens per day while maintaining sub-200ms response times for 95% of requests.",
+    "tech": ["TypeScript", "Go", "Kubernetes", "Anthropic API", "Pinecone", "Kafka", "PostgreSQL", "Grafana"],
+    "github": "https://github.com/alexmercer-ai/nexus-orchestrator",
+    "demo": "https://demo.nexusailabs.io",
+    "image": "/projects/nexus.png",
+    "highlights": [
+      "50M+ tokens processed per day",
+      "99.95% uptime over 18 months",
+      "62% cost reduction via intelligent caching",
+      "200+ enterprise clients onboarded",
+      "Sub-200ms p95 latency"
+    ],
+    "status": "production",
+    "year": 2023,
+    "featured": true
+  },
+  {
+    "id": "promptkit",
+    "title": "PromptKit",
+    "subtitle": "TypeScript toolkit for production prompt engineering",
+    "description": "Open-source TypeScript library that brings software engineering discipline to prompt development. Includes typed prompt templates, automated testing, version control integration, A/B testing harness, and a visual diff tool for prompt iterations.",
+    "longDescription": "Born from frustration with brittle, untested prompts breaking in production. PromptKit treats prompts as first-class code artifacts with the same quality bar as application code. It integrates directly into CI/CD pipelines and catches prompt regressions before they reach users.",
+    "tech": ["TypeScript", "Node.js", "Vitest", "Anthropic API", "OpenAI API", "Zod"],
+    "github": "https://github.com/alexmercer-ai/promptkit",
+    "demo": "https://promptkit.dev",
+    "image": "/projects/promptkit.png",
+    "highlights": [
+      "1,100+ GitHub stars",
+      "Typed prompt templates with Zod validation",
+      "Built-in A/B testing framework",
+      "CI/CD integration via GitHub Actions",
+      "Supports Claude, GPT-4, Gemini"
+    ],
+    "status": "open-source",
+    "year": 2024,
+    "featured": true
+  },
+  {
+    "id": "realtime-rag",
+    "title": "LiveContext RAG Engine",
+    "subtitle": "Real-time retrieval-augmented generation over live data",
+    "description": "A streaming RAG pipeline that ingests live data sources (databases, APIs, documents) and provides millisecond-latency contextual retrieval for LLM queries. Purpose-built for enterprise environments with strict data residency requirements.",
+    "longDescription": "Traditional RAG systems have a staleness problem — embeddings go out of date and retrieval becomes unreliable. LiveContext solves this with an event-driven architecture where document updates automatically trigger re-embedding and cache invalidation. The result is a system where the AI always has access to the most current information.",
+    "tech": ["Python", "FastAPI", "Pinecone", "Weaviate", "Kafka", "Redis", "PostgreSQL", "Docker"],
+    "github": "https://github.com/alexmercer-ai/livecontext-rag",
+    "demo": "https://livecontext-demo.vercel.app",
+    "image": "/projects/rag.png",
+    "highlights": [
+      "10TB+ of indexed enterprise data",
+      "< 50ms retrieval latency at p95",
+      "Event-driven re-indexing pipeline",
+      "Multi-tenant with data isolation",
+      "Supports PDF, SQL, API, Confluence sources"
+    ],
+    "status": "production",
+    "year": 2023,
+    "featured": true
+  },
+  {
+    "id": "ai-code-reviewer",
+    "title": "Sentinel Code Review",
+    "subtitle": "AI-powered code review that actually understands context",
+    "description": "A GitHub App that provides intelligent code review using Claude's extended context window to understand entire codebases — not just the diff. It catches subtle bugs, suggests architectural improvements, and learns from your team's review patterns.",
+    "longDescription": "Unlike other AI code review tools that only look at the changed lines, Sentinel loads the relevant modules, test files, and architectural docs into context. This enables it to catch issues like 'this change breaks the caching invariant established in utils/cache.ts' — the kind of insight that typically requires a senior engineer.",
+    "tech": ["TypeScript", "Next.js", "Anthropic API", "GitHub API", "Octokit", "PostgreSQL", "Vercel"],
+    "github": "https://github.com/alexmercer-ai/sentinel-review",
+    "demo": "https://sentinel.review",
+    "image": "/projects/sentinel.png",
+    "highlights": [
+      "Understands full codebase context",
+      "Learns team review patterns over time",
+      "Integrates with GitHub PRs natively",
+      "500+ active developer teams",
+      "Catches 3x more bugs than diff-only reviewers"
+    ],
+    "status": "beta",
+    "year": 2024,
+    "featured": false
+  },
+  {
+    "id": "edge-dashboard",
+    "title": "Stripe API Explorer 2.0",
+    "subtitle": "Redesigned developer experience for 4M+ developers",
+    "description": "A complete ground-up rebuild of Stripe's API Explorer tool, featuring live request/response editing, AI-powered error explanations, auto-generated SDK code snippets, and an interactive guide mode for new integrators.",
+    "longDescription": "The previous API Explorer was functional but created friction at exactly the wrong moment — when developers were first evaluating Stripe. The redesign focused on progressive disclosure: show just enough to get started, but reveal the full power of the API as developers grow. The AI error explanation feature turned cryptic error codes into actionable guidance.",
+    "tech": ["React", "TypeScript", "GraphQL", "Ruby on Rails", "Redis", "GPT-3"],
+    "github": null,
+    "demo": "https://dashboard.stripe.com/apiexplorer",
+    "image": "/projects/stripe.png",
+    "highlights": [
+      "340% increase in daily active usage",
+      "Reduced time-to-first-payment from 4.2 to 1.8 days",
+      "AI error explanations for 200+ error codes",
+      "Served 4M+ developers globally",
+      "Zero downtime during 3 infrastructure migrations"
+    ],
+    "status": "production",
+    "year": 2021,
+    "featured": false
+  }
+]
