@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Sébastien Libert — Data Analyst & Developer IA',
   description:
-    'Data Analyst & Full-Stack Developer avec 14 ans d'expérience IT. Spécialisé en IA, automatisation, et intégration LLM. Disponible pour de nouveaux projets.',
+    "Data Analyst & Full-Stack Developer avec 14 ans d'expérience IT. Spécialisé en IA, automatisation, et intégration LLM. Disponible pour de nouveaux projets.",
   keywords: [
     'Sébastien Libert',
     'Data Analyst',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     url: 'https://sebastien-libert.dev',
     title: 'Sébastien Libert — Data Analyst & Developer IA',
     description:
-      'Data Analyst & Full-Stack Developer. J'utilise l'IA comme co-pilote pour concevoir, automatiser et livrer plus vite.',
+      "Data Analyst & Full-Stack Developer. J'utilise l'IA comme co-pilote pour concevoir, automatiser et livrer plus vite.",
     siteName: 'Sébastien Libert Portfolio',
     images: [
       {
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Sébastien Libert — Data Analyst & Developer IA',
-    description: 'Data Analyst & Full-Stack Developer. 14 ans d'expérience IT, IA & automatisation.',
+    description: "Data Analyst & Full-Stack Developer. 14 ans d'expérience IT, IA & automatisation.",
     images: ['https://sebastien-libert.dev/og-image.png'],
   },
   robots: {
