@@ -22,7 +22,7 @@ export default function ChatInterface({ initialPrompt, onPromptConsumed }: ChatI
       id: 'welcome',
       role: 'assistant',
       content:
-        "Hi! I'm Alex's AI assistant. I know everything about his experience, projects, and skills. Ask me anything — or try one of the suggested prompts above.",
+        "Bonjour ! Je suis l'assistant IA de Sébastien. Je connais tout de son parcours, ses projets et ses compétences. Pose-moi n'importe quelle question — ou essaie un des prompts suggérés ci-dessus.",
     },
   ])
   const [input, setInput] = useState('')
@@ -271,7 +271,7 @@ export default function ChatInterface({ initialPrompt, onPromptConsumed }: ChatI
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder={rateLimitReached ? 'Session limit reached' : 'Ask me anything about Alex...'}
+            placeholder={rateLimitReached ? 'Session limit reached' : 'Pose une question sur Sébastien...'}
             disabled={isLoading || rateLimitReached}
             rows={1}
             className="flex-1 resize-none bg-white/5 text-foreground text-sm rounded-xl px-4 py-3
@@ -301,24 +301,31 @@ export default function ChatInterface({ initialPrompt, onPromptConsumed }: ChatI
           </motion.button>
         </div>
         <p className="text-xs text-foreground-muted/40 mt-2 px-1">
-          Shift+Enter for new line · Powered by Claude claude-sonnet-4-6
+          Shift+Enter for new line · Powered by Claude Sonnet
         </p>
       </div>
     </div>
   )
 }
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+}
+
 function MessageContent({ content, isStreaming }: { content: string; isStreaming?: boolean }) {
   if (!content && isStreaming) return null
 
-  // Simple markdown-ish rendering
   const lines = content.split('\n')
 
   return (
     <div className="space-y-1 whitespace-pre-wrap">
       {lines.map((line, i) => {
-        // Code blocks (inline `)
-        const rendered = line.replace(/`([^`]+)`/g, '<code class="px-1 py-0.5 rounded bg-white/10 font-mono text-cyan-300 text-xs">$1</code>')
+        const escaped = escapeHtml(line)
+        const rendered = escaped.replace(/`([^`]+)`/g, '<code class="px-1 py-0.5 rounded bg-white/10 font-mono text-cyan-300 text-xs">$1</code>')
         return (
           <span
             key={i}

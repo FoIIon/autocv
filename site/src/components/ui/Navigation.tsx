@@ -62,10 +62,10 @@ export default function Navigation() {
             className="relative flex items-center gap-2 group"
           >
             <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-cyan-500/20 to-purple-600/20 border border-cyan-500/30 flex items-center justify-center group-hover:border-cyan-400/60 transition-all duration-300 group-hover:shadow-glow-sm">
-              <span className="text-sm font-bold text-gradient-cyan">AM</span>
+              <span className="text-sm font-bold text-gradient-cyan">SL</span>
             </div>
             <span className="hidden sm:block text-sm font-semibold text-foreground-muted group-hover:text-foreground transition-colors">
-              Alex Mercer
+              Sébastien Libert
             </span>
           </button>
 

@@ -67,7 +67,7 @@ export async function POST(request: NextRequest) {
     // - Send an email via Resend/SendGrid/SES
     // - Store in a database
     // - Trigger a webhook/Slack notification
-    // Example: await sendEmail({ to: 'alex.mercer@devcraft.io', ...sanitizedData })
+    // Example: await sendEmail({ to: 'sb.libert@gmail.com', ...sanitizedData })
 
     return NextResponse.json(
       {
