@@ -233,9 +233,9 @@ export default function TimelineSection() {
               Experience
             </span>
           </div>
-          <h2 className="text-4xl sm:text-5xl font-bold text-gradient-cyan mb-4">Career Timeline</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold text-gradient-cyan mb-4">Parcours</h2>
           <p className="text-foreground-muted text-lg max-w-2xl">
-            8 years building production systems at scale — from early-stage startup to public company.
+            14+ ans de développement et data — du CRM financier à la gouvernance des données, avec l&apos;IA comme accélérateur.
           </p>
         </div>
 
@@ -293,10 +293,10 @@ export default function TimelineSection() {
                   <div className="text-sm font-mono text-foreground-muted">
                     {cv.education[0].start} — {cv.education[0].end}
                   </div>
-                  <div className="text-xs text-purple-400">{cv.education[0].honors}</div>
+                  {cv.education[0].honors && <div className="text-xs text-purple-400">{cv.education[0].honors}</div>}
                 </div>
               </div>
-              <p className="text-sm text-foreground-muted mb-3">GPA: {cv.education[0].gpa}/4.0</p>
+              {cv.education[0].gpa && <p className="text-sm text-foreground-muted mb-3">GPA: {cv.education[0].gpa}/4.0</p>}
               <ul className="space-y-1">
                 {cv.education[0].highlights.map((h) => (
                   <li key={h} className="flex items-start gap-2 text-sm text-foreground-muted">

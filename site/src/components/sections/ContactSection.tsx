@@ -33,7 +33,7 @@ const SOCIAL_LINKS = [
     name: 'LinkedIn',
     icon: 'in',
     href: cv.contact.linkedin,
-    label: 'linkedin.com/in/alexmercer-dev',
+    label: 'linkedin.com/in/sébastien-libert',
     color: 'hover:text-blue-400',
   },
   {
@@ -44,15 +44,15 @@ const SOCIAL_LINKS = [
       </svg>
     ),
     href: cv.contact.github,
-    label: 'github.com/alexmercer-ai',
+    label: 'github.com/FoIIon',
     color: 'hover:text-foreground',
   },
   {
-    name: 'Twitter',
-    icon: '𝕏',
-    href: cv.contact.twitter,
-    label: '@alexmercer_ai',
-    color: 'hover:text-sky-400',
+    name: 'Téléphone',
+    icon: '📞',
+    href: `tel:${cv.contact.phone}`,
+    label: cv.contact.phone,
+    color: 'hover:text-green-400',
   },
 ]
 
@@ -170,9 +170,9 @@ export default function ContactSection() {
             <div>
               <h3 className="text-xl font-semibold text-foreground mb-3">Get in touch</h3>
               <p className="text-foreground-muted leading-relaxed">
-                Whether you&apos;re looking to hire a principal engineer who deeply understands AI,
-                collaborate on an open-source project, or just want to nerd out about LLMs and
-                distributed systems — I&apos;d love to hear from you.
+                Que vous cherchiez un profil data/dev qui maîtrise l&apos;IA et l&apos;automatisation,
+                que vous souhaitiez collaborer sur un projet, ou simplement discuter de prompt engineering
+                et de workflows IA — je serais ravi d&apos;échanger avec vous.
               </p>
             </div>
 
@@ -215,7 +215,7 @@ export default function ContactSection() {
                 onClick={() => {
                   const link = document.createElement('a')
                   link.href = '/cv.pdf'
-                  link.download = 'Alex-Mercer-CV.pdf'
+                  link.download = 'Sebastien-Libert-CV.pdf'
                   link.click()
                 }}
               >
@@ -322,7 +322,7 @@ export default function ContactSection() {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Hi Alex, I'd love to talk about..."
+                    placeholder="Bonjour Sébastien, j'aimerais discuter de..."
                     rows={5}
                     className={`w-full px-4 py-3 rounded-xl bg-white/5 text-foreground text-sm
                       placeholder:text-foreground-muted/40 border transition-all duration-200
@@ -367,9 +367,9 @@ export default function ContactSection() {
           transition={{ delay: 0.5 }}
           className="mt-24 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-foreground-muted/40"
         >
-          <p>© 2024 Alex Mercer. Built with Next.js & Claude.</p>
+          <p>© 2025 Sébastien Libert. Built with Next.js & Claude Code.</p>
           <p className="font-mono text-xs">
-            $ echo &quot;AI-native since 2018&quot;
+            $ echo &quot;AI-native — powered by Claude Code&quot;
           </p>
         </motion.div>
       </div>

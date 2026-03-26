@@ -188,9 +188,9 @@ export default function ManifestoSection() {
           style={{ transitionDelay: '2000ms' }}
         >
           <p className="text-foreground-muted text-lg leading-relaxed">
-            I&apos;m a senior developer who has fully embraced the AI-native paradigm.
-            Every system I build is designed for human-AI collaboration from day one.
-            The result: dramatically faster delivery, higher quality, and products that adapt.
+            14 ans de développement et de data m&apos;ont appris une chose : les meilleurs résultats
+            viennent quand l&apos;humain et la machine travaillent ensemble. Prompt engineering, Claude Code,
+            automatisation n8n — chaque projet est conçu pour tirer le meilleur des deux.
           </p>
         </div>
 
@@ -202,12 +202,12 @@ export default function ManifestoSection() {
           style={{ transitionDelay: '2200ms' }}
         >
           {[
-            'Human-AI collaboration > automation',
-            'Shipping beats perfecting',
-            'Observability from day one',
-            'Empathy drives architecture',
-            'Open source when possible',
-            'Context is everything',
+            "L'IA comme co-pilote, pas comme remplacement",
+            'Automatiser tout ce qui peut l\'être',
+            'La donnée fiable avant tout',
+            'Pragmatisme et livraison',
+            'Apprendre en continu',
+            'Le contexte est clé',
           ].map((value) => (
             <div
               key={value}

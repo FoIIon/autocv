@@ -8,10 +8,10 @@ import { cv } from '@/lib/constants'
 
 const BOOT_LINES = [
   { text: '$ initializing autocv v2.0...', delay: 0 },
-  { text: '$ loading identity: Alex Mercer', delay: 400 },
-  { text: '$ scanning skills: [AI, React, Python, Go, TypeScript...]', delay: 900 },
-  { text: '$ experience: 8 years, 4 companies', delay: 1400 },
-  { text: '$ open_source_contributions: 2400+ stars', delay: 1900 },
+  { text: '$ loading identity: Sébastien Libert', delay: 400 },
+  { text: '$ scanning skills: [AI, Data, Java, React, n8n, Claude...]', delay: 900 },
+  { text: '$ experience: 14+ years, Data & Full-Stack', delay: 1400 },
+  { text: '$ ai_tools: [Claude Code, Prompt Engineering, n8n, Copilot]', delay: 1900 },
   { text: '$ checking availability... OPEN_TO_OPPORTUNITIES', delay: 2400 },
   { text: '$ status: READY_FOR_HIRE ✓', delay: 2900 },
 ]
@@ -217,9 +217,9 @@ export default function HeroSection() {
                 className="grid grid-cols-3 gap-6 max-w-md mx-auto pt-6"
               >
                 {[
-                  { value: '8+', label: 'Years exp.' },
-                  { value: '50M+', label: 'Tokens/day' },
-                  { value: '3.5k+', label: 'OSS stars' },
+                  { value: '14+', label: "Ans d'exp." },
+                  { value: '20+', label: 'Clients EU' },
+                  { value: 'AI', label: 'Native' },
                 ].map((stat) => (
                   <div key={stat.label} className="text-center">
                     <div className="text-2xl font-bold text-gradient-cyan">{stat.value}</div>

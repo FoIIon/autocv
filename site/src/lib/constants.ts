@@ -60,11 +60,10 @@ export type CV = {
     twitter: string
   }
   skills: {
-    'AI/ML': Skill[]
-    Frontend: Skill[]
-    Backend: Skill[]
-    DevOps: Skill[]
-    Tools: Skill[]
+    'AI & Automation': Skill[]
+    'Data & Analytics': Skill[]
+    Development: Skill[]
+    'Cloud & Systems': Skill[]
   }
   experience: Experience[]
   education: Education[]
@@ -86,5 +85,5 @@ export const NAV_LINKS = [
   { label: 'Contact', href: '#contact' },
 ]
 
-export const SITE_URL = 'https://alexmercer.dev'
+export const SITE_URL = 'https://sebastien-libert.dev'
 export const MAX_CHAT_MESSAGES = 10

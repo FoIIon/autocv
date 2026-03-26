@@ -7,12 +7,12 @@ import { cv } from '@/lib/constants'
 
 // Orbital configuration: skill → orbit ring
 const ORBITAL_CONFIG = {
-  inner: ['LLM Integration', 'Prompt Engineering', 'React / Next.js', 'TypeScript', 'Node.js / Bun'],
-  middle: ['RAG Systems', 'Python (FastAPI)', 'AWS (ECS, Lambda, S3)', 'PostgreSQL', 'Docker / Kubernetes', 'Claude Code', 'GitHub Actions'],
+  inner: ['Prompt Engineering', 'Claude Code', 'ChatGPT', 'GTM Server-Side', 'Data Governance'],
+  middle: ['n8n', 'Looker Studio', 'GA4', 'React / Next.js', 'Java / Spring', 'GitHub Copilot', 'SQL / BigQuery'],
   outer: [
-    'PyTorch', 'LangChain', 'Go', 'Redis', 'Kafka',
-    'Fine-tuning', 'Framer Motion', 'Vector DBs (Pinecone, Weaviate)',
-    'GraphQL (Apollo)', 'Tailwind CSS', 'Terraform', 'Vercel / Cloudflare',
+    'Gemini', 'Hugging Face', 'Python', 'C# / .NET', 'Funnel',
+    'GCP', 'TypeScript', 'Vercel',
+    'RGPD', 'Linux', 'Git / GitHub', 'REST APIs',
   ],
 }
 
@@ -40,7 +40,6 @@ function OrbitRing({
   reverse?: boolean
 }) {
   const colors = ORBIT_COLORS[orbitKey]
-  const circumference = 2 * Math.PI * radius
 
   return (
     <motion.div
@@ -119,15 +118,15 @@ function SkillBar({ name, level, color }: { name: string; level: number; color: 
 }
 
 const SKILL_CATEGORIES = [
-  { key: 'AI/ML' as const, label: 'AI/ML', color: 'bg-gradient-to-r from-cyan-500 to-cyan-400' },
-  { key: 'Frontend' as const, label: 'Frontend', color: 'bg-gradient-to-r from-purple-500 to-purple-400' },
-  { key: 'Backend' as const, label: 'Backend', color: 'bg-gradient-to-r from-cyan-600 to-blue-500' },
-  { key: 'DevOps' as const, label: 'DevOps', color: 'bg-gradient-to-r from-orange-500 to-yellow-500' },
+  { key: 'AI & Automation' as const, label: 'IA & Automation', color: 'bg-gradient-to-r from-cyan-500 to-cyan-400' },
+  { key: 'Data & Analytics' as const, label: 'Data & Analytics', color: 'bg-gradient-to-r from-purple-500 to-purple-400' },
+  { key: 'Development' as const, label: 'Développement', color: 'bg-gradient-to-r from-cyan-600 to-blue-500' },
+  { key: 'Cloud & Systems' as const, label: 'Cloud & Systèmes', color: 'bg-gradient-to-r from-orange-500 to-yellow-500' },
 ]
 
 export default function SkillsSection() {
   const [activeTab, setActiveTab] = useState<'orbital' | 'bars'>('orbital')
-  const [activeCategory, setActiveCategory] = useState('AI/ML')
+  const [activeCategory, setActiveCategory] = useState('AI & Automation')
   const { ref: headingRef, isVisible: headingVisible } = useScrollReveal()
 
   const activeSkills = cv.skills[activeCategory as keyof typeof cv.skills] ?? []
@@ -157,11 +156,11 @@ export default function SkillsSection() {
             </span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-gradient-cyan mb-4">
-            Skills & Stack
+            Compétences & Stack
           </h2>
           <p className="text-foreground-muted text-lg max-w-2xl">
-            8+ years of depth across the full stack, with a special focus on AI integration
-            and building production-grade systems.
+            14+ ans de profondeur technique, du développement full-stack à la data governance,
+            avec une spécialisation forte en IA et automatisation.
           </p>
 
           {/* View toggle */}
@@ -174,7 +173,7 @@ export default function SkillsSection() {
                   : 'bg-white/5 text-foreground-muted border border-white/5 hover:bg-white/10'
               }`}
             >
-              ◎ Orbital View
+              ◎ Vue Orbitale
             </button>
             <button
               onClick={() => setActiveTab('bars')}
@@ -184,7 +183,7 @@ export default function SkillsSection() {
                   : 'bg-white/5 text-foreground-muted border border-white/5 hover:bg-white/10'
               }`}
             >
-              ▤ Skill Levels
+              ▤ Niveaux
             </button>
           </div>
         </div>
@@ -227,7 +226,7 @@ export default function SkillsSection() {
 
                   <div className="w-14 h-14 rounded-full bg-gradient-to-br from-cyan-500/30 to-purple-600/30 border-2 border-cyan-500/50 flex flex-col items-center justify-center shadow-glow">
                     <span className="text-xs font-bold text-cyan-400 leading-tight text-center">
-                      Human<br/>+ AI
+                      Data<br/>+ IA
                     </span>
                   </div>
                 </div>
@@ -236,7 +235,7 @@ export default function SkillsSection() {
 
             {/* Legend */}
             <div className="flex-1 space-y-6">
-              <h3 className="text-xl font-semibold text-foreground">Technology Orbits</h3>
+              <h3 className="text-xl font-semibold text-foreground">Orbites Technologiques</h3>
               {(Object.keys(ORBITAL_CONFIG) as OrbitKey[]).map((orbit) => (
                 <div key={orbit} className="space-y-2">
                   <div className="flex items-center gap-2">
@@ -250,7 +249,7 @@ export default function SkillsSection() {
                       }`}
                     />
                     <span className="text-sm font-medium text-foreground capitalize">
-                      {orbit} Orbit — {orbit === 'inner' ? 'Core strengths' : orbit === 'middle' ? 'Primary stack' : 'Extended tooling'}
+                      {orbit === 'inner' ? 'Inner — Expertise principale' : orbit === 'middle' ? 'Middle — Stack quotidien' : 'Outer — Outils complémentaires'}
                     </span>
                   </div>
                   <div className="flex flex-wrap gap-1.5 pl-5">
@@ -305,25 +304,27 @@ export default function SkillsSection() {
           </div>
         )}
 
-        {/* Certifications */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4"
-        >
-          {cv.certifications.map((cert) => (
-            <div
-              key={cert.name}
-              className="p-4 rounded-xl bg-background-secondary border border-white/5 hover:border-cyan-500/20 transition-all"
-            >
-              <div className="text-xs text-cyan-400 font-mono mb-1">{cert.year}</div>
-              <div className="text-sm font-medium text-foreground mb-0.5">{cert.name}</div>
-              <div className="text-xs text-foreground-muted">{cert.issuer}</div>
-            </div>
-          ))}
-        </motion.div>
+        {/* Certifications - only show if they exist */}
+        {cv.certifications.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4"
+          >
+            {cv.certifications.map((cert) => (
+              <div
+                key={cert.name}
+                className="p-4 rounded-xl bg-background-secondary border border-white/5 hover:border-cyan-500/20 transition-all"
+              >
+                <div className="text-xs text-cyan-400 font-mono mb-1">{cert.year}</div>
+                <div className="text-sm font-medium text-foreground mb-0.5">{cert.name}</div>
+                <div className="text-xs text-foreground-muted">{cert.issuer}</div>
+              </div>
+            ))}
+          </motion.div>
+        )}
       </div>
     </section>
   )

@@ -8,11 +8,11 @@ interface SuggestedPromptsProps {
 }
 
 const PROMPTS = [
-  { text: 'Generate a cover letter', icon: '✉' },
-  { text: "What are his key strengths?", icon: '⚡' },
-  { text: 'Generate a React component', icon: '⚛' },
-  { text: 'Why should we hire him?', icon: '★' },
-  { text: 'Prove this site was built with AI', icon: '✦' },
+  { text: 'Génère une lettre de motivation', icon: '✉' },
+  { text: 'Quels sont ses points forts ?', icon: '⚡' },
+  { text: 'Pourquoi le recruter ?', icon: '★' },
+  { text: 'Parle-moi de ses compétences IA', icon: '✦' },
+  { text: 'Ce site a été construit comment ?', icon: '⚛' },
 ]
 
 export default function SuggestedPrompts({ onSelect, disabled }: SuggestedPromptsProps) {

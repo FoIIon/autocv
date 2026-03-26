@@ -1,185 +1,138 @@
 {
-  "name": "Alex Mercer",
-  "title": "AI-Native Full-Stack Developer",
-  "tagline": "Building the future at the intersection of human creativity and machine intelligence.",
-  "bio": "I'm a senior developer with 8+ years of experience who has fully embraced the AI-native paradigm. I don't just use AI tools — I architect systems where human intuition and machine intelligence amplify each other. My work spans from low-latency ML inference pipelines to the delicate craft of designing interfaces that feel alive.",
+  "name": "Sébastien Libert",
+  "title": "Data Analyst & Full-Stack Developer — AI & Automation",
+  "tagline": "14+ ans d'expérience IT. J'utilise l'IA non pas comme un outil, mais comme un co-pilote pour concevoir, automatiser et livrer plus vite.",
+  "bio": "Développeur full-stack devenu Data Analyst, j'ai passé 14 ans à construire des applications métier robustes et à structurer des données critiques dans des environnements financiers et réglementés. Aujourd'hui, je pousse cette expertise plus loin en intégrant l'intelligence artificielle et l'automatisation dans chaque couche de mon travail — du prompt engineering avec Claude et GPT à l'orchestration de workflows avec n8n, en passant par la création de projets complets assistés par IA via Claude Code.",
   "contact": {
-    "email": "alex.mercer@devcraft.io",
-    "phone": "+1 (415) 555-0192",
-    "location": "San Francisco, CA (Remote-first)",
-    "linkedin": "https://linkedin.com/in/alexmercer-dev",
-    "github": "https://github.com/alexmercer-ai",
-    "website": "https://alexmercer.dev",
-    "twitter": "https://twitter.com/alexmercer_ai"
+    "email": "sb.libert@gmail.com",
+    "phone": "+32 499 60 55 99",
+    "location": "Marche-en-Famenne, Belgique",
+    "linkedin": "https://linkedin.com/in/sébastien-libert",
+    "github": "https://github.com/FoIIon",
+    "website": "",
+    "twitter": ""
   },
   "skills": {
-    "AI/ML": [
-      { "name": "LLM Integration", "level": 95 },
-      { "name": "Prompt Engineering", "level": 95 },
-      { "name": "RAG Systems", "level": 88 },
-      { "name": "Fine-tuning", "level": 80 },
-      { "name": "PyTorch", "level": 78 },
-      { "name": "LangChain", "level": 85 },
-      { "name": "Anthropic Claude API", "level": 95 },
-      { "name": "OpenAI API", "level": 92 },
-      { "name": "Hugging Face", "level": 82 },
-      { "name": "Vector DBs (Pinecone, Weaviate)", "level": 85 }
+    "AI & Automation": [
+      { "name": "Prompt Engineering", "level": 92 },
+      { "name": "Claude Code (Anthropic)", "level": 90 },
+      { "name": "Claude API / Anthropic SDK", "level": 85 },
+      { "name": "ChatGPT / OpenAI", "level": 90 },
+      { "name": "GitHub Copilot", "level": 88 },
+      { "name": "Google Gemini", "level": 80 },
+      { "name": "Hugging Face", "level": 75 },
+      { "name": "n8n (workflow automation)", "level": 82 },
+      { "name": "Funnel (data automation)", "level": 88 },
+      { "name": "AI-Assisted Development", "level": 92 }
     ],
-    "Frontend": [
-      { "name": "React / Next.js", "level": 96 },
-      { "name": "TypeScript", "level": 94 },
-      { "name": "Tailwind CSS", "level": 92 },
-      { "name": "Framer Motion", "level": 88 },
-      { "name": "Three.js / WebGL", "level": 72 },
-      { "name": "GraphQL (Apollo)", "level": 85 }
+    "Data & Analytics": [
+      { "name": "Google Analytics 4", "level": 90 },
+      { "name": "Google Tag Manager (client & server-side)", "level": 92 },
+      { "name": "Looker Studio", "level": 90 },
+      { "name": "SQL / BigQuery", "level": 85 },
+      { "name": "Data Governance & Quality", "level": 88 },
+      { "name": "RGPD / GDPR Compliance", "level": 85 },
+      { "name": "Data Visualization", "level": 85 },
+      { "name": "KPI & Reporting", "level": 88 }
     ],
-    "Backend": [
-      { "name": "Node.js / Bun", "level": 93 },
-      { "name": "Python (FastAPI)", "level": 90 },
-      { "name": "Go", "level": 78 },
-      { "name": "PostgreSQL", "level": 88 },
-      { "name": "Redis", "level": 85 },
-      { "name": "Kafka", "level": 76 }
+    "Development": [
+      { "name": "Java / Spring", "level": 88 },
+      { "name": "JavaScript / TypeScript", "level": 85 },
+      { "name": "React / Next.js", "level": 80 },
+      { "name": "Python", "level": 78 },
+      { "name": "C# / .NET", "level": 75 },
+      { "name": "PHP", "level": 75 },
+      { "name": "ExtJS", "level": 85 },
+      { "name": "HTML / CSS", "level": 88 },
+      { "name": "REST APIs", "level": 85 }
     ],
-    "DevOps": [
-      { "name": "Docker / Kubernetes", "level": 85 },
-      { "name": "AWS (ECS, Lambda, S3)", "level": 88 },
-      { "name": "Vercel / Cloudflare", "level": 92 },
-      { "name": "Terraform", "level": 76 },
-      { "name": "GitHub Actions", "level": 90 }
-    ],
-    "Tools": [
-      { "name": "Claude Code", "level": 98 },
-      { "name": "Git", "level": 95 },
-      { "name": "Figma", "level": 75 },
-      { "name": "Datadog", "level": 80 },
-      { "name": "Linear", "level": 88 }
+    "Cloud & Systems": [
+      { "name": "Google Cloud Platform (GCP)", "level": 85 },
+      { "name": "Linux (Debian/Ubuntu)", "level": 82 },
+      { "name": "Windows Server", "level": 80 },
+      { "name": "Git / GitHub", "level": 88 },
+      { "name": "Vercel", "level": 78 },
+      { "name": "Apache / Tomcat", "level": 82 },
+      { "name": "CI/CD & Deployment", "level": 75 }
     ]
   },
   "experience": [
     {
-      "company": "Nexus AI Labs",
-      "url": "https://nexusailabs.io",
-      "role": "Principal Engineer — AI Platform",
-      "start": "2022-03",
-      "end": null,
-      "location": "San Francisco, CA (Hybrid)",
-      "description": "Leading the design and implementation of Nexus's core AI orchestration platform, enabling 200+ enterprise clients to deploy custom AI agents at scale.",
-      "achievements": [
-        "Architected a multi-agent orchestration system processing 50M+ tokens/day with 99.95% uptime",
-        "Reduced LLM inference costs by 62% through intelligent caching and prompt compression strategies",
-        "Built a real-time RAG pipeline over 10TB of client data using Pinecone + custom embedding models",
-        "Grew AI platform team from 3 to 12 engineers; introduced async-first culture and AI-assisted code reviews",
-        "Shipped 6 major product releases in 18 months, each delivered on time"
-      ],
-      "tech": ["TypeScript", "Python", "Go", "Kubernetes", "Anthropic API", "Pinecone", "Kafka", "PostgreSQL"]
-    },
-    {
-      "company": "Stripe",
-      "url": "https://stripe.com",
-      "role": "Senior Software Engineer — Developer Experience",
-      "start": "2020-01",
-      "end": "2022-02",
-      "location": "San Francisco, CA",
-      "description": "Owned the developer dashboard and SDK tooling that serves 4M+ developers worldwide. Focused on reducing time-to-first-payment for new integrations.",
-      "achievements": [
-        "Rebuilt the API Explorer tool, increasing daily active usage by 340%",
-        "Shipped the first AI-powered error explanation feature in Stripe's dashboard using GPT-3",
-        "Reduced median time-to-first-payment for new signups from 4.2 days to 1.8 days",
-        "Maintained zero downtime for dashboard during 3 major infrastructure migrations",
-        "Mentored 8 junior engineers; 4 were promoted to senior within 18 months"
-      ],
-      "tech": ["React", "TypeScript", "Ruby on Rails", "Go", "PostgreSQL", "Redis"]
-    },
-    {
-      "company": "Vercel",
-      "url": "https://vercel.com",
-      "role": "Software Engineer — Edge Runtime",
-      "start": "2018-06",
-      "end": "2019-12",
-      "location": "Remote",
-      "description": "Early-stage engineer (employee #31) working on the Edge Network and runtime that powers millions of Next.js deployments globally.",
-      "achievements": [
-        "Implemented key features of the Edge Runtime including streaming responses and middleware",
-        "Reduced cold start times for serverless functions by 45% through V8 snapshot optimization",
-        "Contributed to open-source Next.js: 23 merged PRs, 1,400+ GitHub stars on personal contributions",
-        "Helped scale edge network from 12 to 47 PoPs globally"
-      ],
-      "tech": ["Node.js", "Rust", "TypeScript", "Next.js", "AWS", "CloudFront"]
-    },
-    {
-      "company": "FreelanceAI",
+      "company": "Knewledge",
       "url": null,
-      "role": "Independent Consultant — Full-Stack & ML",
-      "start": "2016-09",
-      "end": "2018-05",
-      "location": "Remote",
-      "description": "Built custom software and early ML-powered products for startups in fintech, healthtech, and e-commerce. Specialized in turning prototypes into production-grade systems.",
+      "role": "Data Analyst — Data Manager",
+      "start": "2020-01",
+      "end": null,
+      "location": "Luxembourg",
+      "description": "Mise en œuvre de pratiques de data governance et de qualité des données pour plus de 20 clients européens dans des contextes réglementés (finance, marketing digital). Facilitateur entre équipes métiers, IT, sécurité et conformité.",
       "achievements": [
-        "Delivered 12 projects end-to-end across 4 industries with 100% client satisfaction",
-        "Built a real-time fraud detection system for a fintech startup, reducing fraud losses by 78%",
-        "Created an NLP-powered document review tool for a legal tech company (trained on 100K+ legal docs)"
+        "Data governance et qualité des données pour 20+ clients européens (Luxembourg, Belgique, France)",
+        "Configuration et gestion avancée de Google Tag Manager (client-side & server-side via GCP)",
+        "Animation de workshops sur le tracking server-side pour équipes techniques et marketing",
+        "Création de dashboards Looker Studio et automatisation des flux de données via Funnel",
+        "Conseil et sensibilisation RGPD : classification des données, analyse des risques, arbitrage technologique",
+        "Mise en place de flux de données fiables et traçables (GTM, Funnel, Looker Studio)"
       ],
-      "tech": ["Python", "React", "Django", "PostgreSQL", "scikit-learn", "AWS"]
+      "tech": ["GA4", "GTM", "GCP", "Looker Studio", "BigQuery", "Funnel", "SQL", "RGPD"]
+    },
+    {
+      "company": "Jiway",
+      "url": null,
+      "role": "Développeur Full-Stack / Référent Technique",
+      "start": "2011-01",
+      "end": "2020-01",
+      "location": "Luxembourg",
+      "description": "Développement et maintenance d'applications métier dans le secteur financier (CRM Mozaik), avec des exigences élevées en matière de fiabilité, sécurité et continuité de service. Référent technique et formateur pour les équipes juniors.",
+      "achievements": [
+        "Développement d'applications Java/JavaScript (ExtJS, Spring, Tomcat) pour le secteur financier",
+        "Conception de modules pour le CRM Mozaik avec contraintes de fiabilité et sécurité",
+        "Interaction directe avec clients internationaux (États-Unis, Luxembourg) pour la définition de besoins",
+        "Encadrement et formation de développeurs juniors en Serbie (Java, ExtJS)",
+        "Réalisation d'un projet Android autonome, toujours en production chez le client",
+        "Contribution à la structuration des données applicatives pour reporting et contrôles"
+      ],
+      "tech": ["Java", "Spring", "JavaScript", "ExtJS", "Tomcat", "SQL", "Android", "Git"]
     }
   ],
   "education": [
     {
-      "institution": "UC Berkeley",
-      "degree": "B.S. Computer Science",
-      "field": "Artificial Intelligence",
-      "start": "2012",
-      "end": "2016",
-      "gpa": "3.91",
-      "honors": "Magna Cum Laude",
+      "institution": "Haute École HELMo Saint-Laurent",
+      "degree": "Bachelier",
+      "field": "Informatique de Gestion",
+      "start": "2008",
+      "end": "2011",
+      "gpa": "",
+      "honors": "",
       "highlights": [
-        "Thesis: 'Attention Mechanisms in Sequential Decision Making'",
-        "Teaching Assistant for CS189: Introduction to Machine Learning",
-        "Founding member of AI@Berkeley student organization"
+        "Formation complète en développement, bases de données, réseaux et systèmes",
+        "Solide base en analyse et conception de solutions informatiques"
       ]
     }
   ],
   "languages": [
-    { "language": "English", "level": "Native" },
-    { "language": "French", "level": "Professional" },
-    { "language": "Spanish", "level": "Conversational" }
+    { "language": "Français", "level": "Langue maternelle" },
+    { "language": "Anglais", "level": "Professionnel (B2)" }
   ],
-  "certifications": [
-    {
-      "name": "AWS Certified Solutions Architect — Professional",
-      "issuer": "Amazon Web Services",
-      "year": 2023
-    },
-    {
-      "name": "Google Cloud Professional ML Engineer",
-      "issuer": "Google Cloud",
-      "year": 2022
-    },
-    {
-      "name": "Certified Kubernetes Application Developer (CKAD)",
-      "issuer": "CNCF",
-      "year": 2021
-    }
-  ],
+  "certifications": [],
   "openSource": [
     {
-      "project": "next-ai-stream",
-      "description": "Utility library for streaming Anthropic/OpenAI responses in Next.js App Router",
-      "stars": 2400,
-      "url": "https://github.com/alexmercer-ai/next-ai-stream"
+      "project": "finance-app",
+      "description": "Application de gestion financière full-stack en C#/.NET et React/TypeScript",
+      "stars": 0,
+      "url": "https://github.com/FoIIon/finance-app"
     },
     {
-      "project": "promptkit",
-      "description": "TypeScript toolkit for structured prompt engineering with validation and versioning",
-      "stars": 1100,
-      "url": "https://github.com/alexmercer-ai/promptkit"
+      "project": "autocv",
+      "description": "Portfolio interactif généré par IA avec chat intégré — le site que vous visitez",
+      "stars": 0,
+      "url": "https://github.com/FoIIon/autocv"
     }
   ],
   "values": [
-    "Human-AI collaboration over pure automation",
-    "Shipping beats perfecting",
-    "Observability from day one",
-    "Empathy drives better architecture",
-    "Open source when possible"
+    "L'IA comme co-pilote, pas comme remplacement",
+    "Automatiser tout ce qui peut l'être",
+    "La donnée fiable avant tout",
+    "Pragmatisme et livraison",
+    "Apprendre en continu"
   ]
 }

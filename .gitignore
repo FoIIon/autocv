@@ -17,3 +17,6 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# API keys / secrets
+vercel api key

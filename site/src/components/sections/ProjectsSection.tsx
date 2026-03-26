@@ -158,8 +158,8 @@ export default function ProjectsSection() {
             Featured Projects
           </h2>
           <p className="text-foreground-muted text-lg max-w-2xl">
-            Systems that process millions of requests, libraries with thousands of stars,
-            and tools that developers actually use in production.
+            Du portfolio IA au CRM financier, en passant par l&apos;automatisation n8n
+            et la data governance pour 20+ clients européens.
           </p>
 
           {/* Filter tabs */}
@@ -200,11 +200,11 @@ export default function ProjectsSection() {
               More on GitHub
             </h3>
             <p className="text-sm text-foreground-muted">
-              3,500+ stars across open source contributions. next-ai-stream, promptkit, and more.
+              Projets personnels, contributions et expérimentations IA.
             </p>
           </div>
           <a
-            href="https://github.com/alexmercer-ai"
+            href="https://github.com/FoIIon"
             target="_blank"
             rel="noopener noreferrer"
             className="shrink-0 px-5 py-2.5 rounded-xl bg-white/5 text-foreground border border-white/10 text-sm font-medium hover:bg-white/10 hover:border-cyan-500/30 transition-all flex items-center gap-2"
