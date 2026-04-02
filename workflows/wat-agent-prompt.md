@@ -45,6 +45,32 @@ sans jamais casser le build ni réduire la qualité existante.
 
 ## DÉROULEMENT DU CYCLE
 
+### ÉTAPE 0 — VÉRIFICATION GIT (prérequis bloquant)
+
+Avant toute chose, vérifie que le dépôt git est opérationnel.
+
+```bash
+cd /home/admin/Programmation/autocv
+
+# 1. Supprimer le verrou git s'il existe (laissé par un run précédent planté)
+if [ -f .git/index.lock ]; then
+  echo "⚠️  Verrou git détecté — suppression"
+  rm -f .git/index.lock
+fi
+
+# 2. Tester les credentials GitHub (dry-run, aucune donnée envoyée)
+git push --dry-run 2>&1
+```
+
+**Si `git push --dry-run` retourne une erreur 403 ou d'authentification :**
+- Écris dans `data/changelog.md` : `## Cycle [date] — ABORT : credentials GitHub invalides`
+- **STOP immédiat** — ne pas continuer le cycle
+- Ne pas rester bloqué en attente silencieuse
+
+**Si tout est OK → continuer à ÉTAPE 1.**
+
+---
+
 ### ÉTAPE 1 — LECTURE DE LA MÉMOIRE
 
 Lis `data/changelog.md` pour :
