@@ -52,6 +52,9 @@ Avant toute chose, vérifie que le dépôt git est opérationnel.
 ```bash
 cd /home/admin/Programmation/autocv
 
+# 0. Récupérer la dernière version du dépôt
+git pull
+
 # 1. Supprimer le verrou git s'il existe (laissé par un run précédent planté)
 if [ -f .git/index.lock ]; then
   echo "⚠️  Verrou git détecté — suppression"
